@@ -14,7 +14,7 @@ public class Empresa {
     public double calcularFolhaSalarial() {
         double total = 0;
         for (Funcionario f : funcionarios) {
-            total += f.salario;
+            total += f.calcularSalario(f.salario);
         }
         return total;
     }
